@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import Register from '../views/Register.vue'
 import Profile from '../views/Profile.vue'
+import MyPosts from '../views/MyPosts.vue'
+import PostCreate from '../views/PostCreate.vue'
 
 Vue.use(Router)
 
@@ -13,7 +15,11 @@ export default new Router({
         {path:'/',name:'Home',component:Home},
         {path:'/login',name:'Login',component:Login},
         {path:'/register',name:'Register',component:Register},
+
+
         {path:'/profile',name:'Profile',component:Profile},
         //后续有模块再补充
+        { path: '/post/create', name: 'PostCreate', component: PostCreate },
+        { path: '/myposts', name: 'MyPosts', component: MyPosts }
     ]
 })

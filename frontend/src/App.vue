@@ -8,6 +8,7 @@
             <span>你好，{{ user.nickname }}</span>
             <el-link @click="logout" type="primary">退出</el-link>
             <el-link @click="$router.push('/profile')" type="primary">个人中心</el-link>
+            <el-link @click="$router.push('/myposts')" type="primary">我的内容</el-link>
           </template>
           <template v-else>
             <el-link @click="$router.push('/login')" type="primary">登录</el-link>
